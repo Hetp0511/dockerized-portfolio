@@ -33,6 +33,28 @@ This project contains a personal portfolio website that introduces who I am, my 
 ### 🌐 Portfolio Hosted on Docker (Localhost)
 ![Portfolio Hosted on Docker](Docker%20images/portfolio%20host%20on%20docker.png)
 
+## 🚀 Run This Portfolio Using Docker
+
+If you'd like to check out this portfolio website locally using Docker, follow the steps below.
+
+---
+
+### 🐳 Prerequisites
+
+- Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) on your machine
+- Ensure Docker is running properly
+
+---
+
+### 📥 Step-by-Step Instructions
+
+1. **Open your Terminal or Command Prompt**
+
+2. **Pull the Docker image from Docker Hub**
+   ```bash
+   docker pull hetpatel0511/portfolio-website:latest
+
+
 
 ## 🛠️ Tech Stack Used
 
