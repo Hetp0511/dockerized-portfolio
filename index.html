@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Het's PortFolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Playpen+Sans+Deva:wght@100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b447c8092d.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      html {
+        cursor: url("./images/undefined\ -\ Imgur\ \(1\).png"), auto;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/avatar.5852f40fbb38aa284829fa3fb7722225.svg"
+    />
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="index.html"><i class="fa-solid fa-house"></i>&nbsp; Home</a>
+      <a href="about.html"><i class="fa-solid fa-user"></i>&nbsp; About</a>
+      <a href="resume.html"><i class="fa-solid fa-file"></i>&nbsp;Resume</a>
+    </div>
+    <div class="container">
+      <div class="intro">
+        <h1 id="type-line-1"></h1>
+        <h5 id="type-line-2"></h5>
+      </div>
+
+      <div class="heading"><img src="./images/Het_photo.jpg" /></div>
+    </div>
+    <div class="introduction">
+      <div class="self-intro">
+        <p>LET ME <span style="color: purple">INTRODUCE</span> MYSELF</p>
+      </div>
+      <div class="intro-body">
+        <div class="intro-text">
+          <p>
+            My name is <strong style="color: purple">Het Patel</strong>,
+            currently pursuing a Bachelor of Engineering in Computer Engineering
+            from LDRP Institute of Technology and Research. I’m a passionate
+            learner with a keen interest in full-stack development, AI
+            technologies, and building impactful digital experiences.
+          </p>
+          <br />
+          <p>
+            Over the course of my academic journey, I’ve consistently scored
+            above average and developed a strong foundation in software
+            development, data structures, and emerging tech trends.
+          </p>
+          <br />
+          <ul>
+            <li>
+              <strong style="color: purple">Web & App Development:</strong>
+              Responsive front-end & mobile apps
+            </li>
+
+            <li>
+              <strong style="color: purple">Problem Solving:</strong> Solid
+              grasp of DSA & logical thinking
+            </li>
+
+            <li>
+              <strong style="color: purple">Teamwork:</strong> Hackathons,
+              collaborative coding
+            </li>
+
+            <li>
+              <strong style="color: purple">Always Learning:</strong> AI, ML,
+              and modern tech stacks
+            </li>
+          </ul>
+          <br />
+          <p>Let’s connect and build something great together! 🚀</p>
+        </div>
+
+        <div class="avatar-img">
+          <img
+            src="./images/avatar.5852f40fbb38aa284829fa3fb7722225.svg"
+            alt="avtar"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="find-me">
+      <div class="find-me-heading">
+        <h1 class="main">FIND ME ON</h1>
+        <p>Feel free to <span style="color: purple">connect</span> me</p>
+      </div>
+      <div class="social-icons">
+        <a
+          href="https://github.com/Hetp0511"
+          target="_blank"
+          class="icon github"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/het-patel0511/"
+          target="_blank"
+          class="icon linkedin"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="designed-by">
+        <p>Designed and Developed by Het Patel</p>
+      </div>
+      <div class="copyrights">
+        <p>Copyright © <span id="year"></span> Het</p>
+      </div>
+
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
+    <script>
+      new TypeIt("#type-line-1", {
+        strings: ["Hi, I am Het!"],
+        speed: 50,
+        waitUntilVisible: true,
+        afterComplete: function (instance) {
+          instance.destroy(); // Stop typing after done
+
+          // Start second line after a delay
+          setTimeout(() => {
+            new TypeIt("#type-line-2", {
+              strings: ["Aspiring Software Developer 🚀"],
+              speed: 50,
+              waitUntilVisible: true,
+            }).go();
+          }, 500); // 0.5s delay before second line starts
+        },
+      }).go();
+    </script>
+  </body>
+</html>
